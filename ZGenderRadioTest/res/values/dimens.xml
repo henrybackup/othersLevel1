@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- 自己写的dimen,用于左边的item -->
+    <dimen name="margin_left">20dp</dimen>
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="margin_bottom">15dp</dimen>
+    <!-- 用于check——pic -->
+    <dimen name="margin_right">8dp</dimen>
+    
+    
+    
+    <dimen name="margin">5dp</dimen>
+    
+</resources>

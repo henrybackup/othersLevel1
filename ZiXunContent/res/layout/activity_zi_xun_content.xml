@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <!-- 第一层里面的4个控件 -->
+    <RelativeLayout 
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+        android:id="@+id/zx_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#EE5C42"
+        android:gravity="center"
+        android:text="资讯内容"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+   
+
+    <Button
+        android:id="@+id/ireturn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android1:layout_alignBottom="@+id/zx_title"
+        android:background="#EE5C42"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+     <Button
+      android:id="@+id/zx_like"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="15dp"
+      android:layout_centerVertical="true"
+      android:background="@drawable/app_comments" 
+      />
+     <TextView 
+         android:id="@+id/zx_num"
+          android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/zx_like"
+         android:layout_alignBottom="@+id/zx_like"
+          android:gravity="center"
+          android:text="2425"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        
+         />
+     
+    </RelativeLayout>
+
+    
+  <RelativeLayout
+        android:id="@+id/inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_layout" >
+
+        <EditText
+            android:id="@+id/c_input"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_input"
+            android:hint="我也说点什么..." />
+
+        <Button
+            android:id="@+id/c_submit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/c_input"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/c_input"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#4876FF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+  <WebView
+      android:id="@+id/z_webView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/inputlayout"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/toplayout" 
+    
+      />
+
+ 
+
+</RelativeLayout>
