@@ -1,10 +1,10 @@
-package com.example.hnetpicture;
+﻿package com.example.hnetpicture;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+ 
 import javax.net.ssl.HttpsURLConnection;
 
 import android.os.Bundle;
